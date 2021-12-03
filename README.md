@@ -78,13 +78,42 @@ contract <name> { // Name puede ser cualquier cosa
 
 #### Tipos de datos:
 
-1. **Números enteros:** Pueden tener una capacidad de 8 a 256 bits.
+1. **Números enteros:** No se recomiendan los números decimales.
   - **int:** Números enteros. 
   - **uint:** Son números enteros sin signos. Pueden opcionalmente indicar su tamaño en bits.
+  Pueden tener una capacidad de 8 a 256 bits.
 
-    address: Guarda direcciones de ETH de 160 bits (20 bytes), y puede tener métodos extra como .transfer o .balance
-    string: Cadena de texto
-    bytes<8-256>: Cadena de bytes
+2. **bool:** Valor booleano, representa verdadero/falso.
+    - true - false
+    - ! (negación)
+    - && (and)
+    - || (or)
+    - == (igualdad)
+    - != (Desigualdad)
+
+3. **address:** Almacenan direcciones de Ethereum. Sirve para relacionar cuentas y contratos. Guarda direcciones de ETH de 160 bits (20 bytes), y puede tener métodos extra como .transfer o .balance
+
+4. **string:** Cadena de texto. Representa un texto en forma de cadena de 
+caracteres.
+
+5. **bytes:** Representa una cadena de bytes sin un 
+formato específico entre 8-256.
+
+#### Tipos de varibles:
+
+1. **Variables locales:** Son aquellas que ocurren durante la ejecución. En la EVM es la parte correspondiente a memoria volátil. Se alojan de forma temporal para utilizarse dentro del ámbito de una función.
+
+2. **Variables de estado:** Son variables que se almacenan en la parte de la ROM de la EVM. Es memoria persistente. Se almacenan en el contrato y que mantienen su valor aun después de finalizada la ejecución de la función.
+
+3. **Variables globales:**
+
+- **msg:** Toda transacción es un mensaje firmado. En este objeto vienen los datos de dicho mensaje (sender, value, etc.).
+
+- **tx:** Represena la transacción, es distitna respecto a msg porque cosas como el sender van variando conforme se concatenan llamadas entre contratos.
+
+- **block:** Información respecto al bloque actual.
+
+[![1](https://github.com/hackmilo/Notas---Curso-de-Introduccion-Solidity/blob/main/img/1.png?raw=true "1")](https://github.com/hackmilo/Notas---Curso-de-Introduccion-Solidity/blob/main/img/1.png?raw=true "1")
 
 
 # Funciones
