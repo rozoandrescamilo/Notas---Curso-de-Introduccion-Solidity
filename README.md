@@ -10,11 +10,8 @@ Profesor Sebastián Leonardo Perez @sebaleoperez
   - [La importancia de Web3 y Solidity](#la-importancia-de-web3-y-solidity) 
 - [Introducción a la programación con Solidity](#introducción-a-la-programación-con-solidity)
   - [Estructura de un contrato](#estructura-de-un-contrato)
-  
 - [Funciones](#funciones) 
-
 - [Gestionando costos](#gestionando-costos)
-
 - [Conceptos avanzados](#conceptos-avanzados)
 
 
@@ -61,6 +58,34 @@ Todo lo que se encuentre en el entorno de este keyword será parte del mismo con
 #### Constructor
 
 Al igual que en la programación orientada a objetos, cada contrato cuenta con una función  opcional constructor la cual se ejecuta por única vez cuando se crea el contrato.
+
+
+```
+// Version puede representar un rango. Ej >=0.7.0 <0.9.0
+pragma solidity <version>;
+
+// Declaración de un contrato, similar a una clase
+contract <name> { // Name puede ser cualquier cosa
+  
+  // Función de inicialización de un contrato
+  constructor() {
+    // Código de inicialización
+  }
+}
+```
+
+## Variables y tipos de datos
+
+#### Tipos de datos:
+
+1. **Números enteros:** Pueden tener una capacidad de 8 a 256 bits.
+  - **int:** Números enteros. 
+  - **uint:** Son números enteros sin signos. Pueden opcionalmente indicar su tamaño en bits.
+
+    address: Guarda direcciones de ETH de 160 bits (20 bytes), y puede tener métodos extra como .transfer o .balance
+    string: Cadena de texto
+    bytes<8-256>: Cadena de bytes
+
 
 # Funciones
 
