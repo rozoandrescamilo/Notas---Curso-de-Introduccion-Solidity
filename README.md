@@ -23,11 +23,11 @@ Profesor Sebastián Leonardo Perez @sebaleoperez
 
 Así denominamos a la evolución de las aplicaciones que funcionan sobre internet, integrando tecnologías como big data e inteligencia artificial, para lograr escenarios como las redes sociales.
 
-#### Blockchain
+#### Blockchain:
 
 La aparición de esta tecnología juega un rol clave en la evolución de la web3, ya que agrega una característica innovadora: **La descentralización.**
 
-#### Solidity
+#### Solidity:
 
 No existe una sola plataforma de Blockchain, pero en la diversidad se destacan aquellas que 
 agregan la capacidad de ejecutar código. Solidity es un lenguaje especialmente creado 
@@ -115,6 +115,35 @@ formato específico entre 8-256.
 
 [![1](https://github.com/hackmilo/Notas---Curso-de-Introduccion-Solidity/blob/main/img/1.png?raw=true "1")](https://github.com/hackmilo/Notas---Curso-de-Introduccion-Solidity/blob/main/img/1.png?raw=true "1")
 
+## Struct y Arrays
+
+- **Struct:** 
+Tipo de dato estructurado que nos permite almacenar información de distintos tipos en un solo esquema. Generalmente, se usa para representar un registro. Para definir una estructura se utiliza la palabra clave struct, que crea un nuevo tipo de datos.
+
+```
+struct <name> {
+  <type> <name>;
+  ...
+  <type> <name>;
+}
+```
+
+- **Arrays:**
+Es una cadena de elementos del mismo tipo de dato que se almacenan de forma consecutiva y por lo tanto se puede acceder a un elemento según su posición dentro de la misma. 
+
+Se dividen en: 
+- Arrays estáticos
+- Arrays dinámicos
+
+```
+<type>[] <visibility> <name>;
+
+// Arreglos estáticos (n = cantidad de elementos)
+<type>[n] <visibility> <name>;
+
+// Arreglos dinámicos
+<type>[] <visibility> <name>;
+```
 
 # Funciones
 
